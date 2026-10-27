@@ -1,1 +1,209 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cheryl Bensa | Communication & Media</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --coral: #ff795f;
+      --teal: #1caaa4;
+      --cream: #fffaf6;
+      --ink: #253337;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+      line-height: 1.7;
+    }
+    nav, section, footer {
+      max-width: 1050px;
+      margin: auto;
+      padding: 24px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    nav a { color: inherit; text-decoration: none; }
+    .brand { font-weight: 700; font-size: 1.2rem; }
+    .brand span { color: var(--coral); }
+    .links { display: flex; gap: 20px; flex-wrap: wrap; }
+    .hero {
+      min-height: 72vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding-top: 65px;
+      padding-bottom: 65px;
+    }
+    .hero-copy { max-width: 620px; }
+    .label {
+      color: #168983;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: .82rem;
+    }
+    h1, h2, h3 {
+      font-family: Manrope, sans-serif;
+      line-height: 1.2;
+    }
+    h1 {
+      font-size: clamp(3.2rem, 8vw, 5.8rem);
+      letter-spacing: -.06em;
+      margin: 18px 0;
+    }
+    h1 span { color: var(--coral); }
+    .lead { font-size: 1.15rem; color: #637174; }
+    .shape {
+      flex: 0 0 220px;
+      height: 220px;
+      border-radius: 42% 58% 60% 40%;
+      background: var(--coral);
+      display: grid;
+      place-items: center;
+      font-size: 5rem;
+      box-shadow: 24px 20px 0 var(--teal);
+      transform: rotate(-7deg);
+    }
+    .button {
+      display: inline-block;
+      background: var(--ink);
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 12px;
+      margin-top: 14px;
+      font-weight: 700;
+    }
+    .soft { background: white; border-radius: 24px; }
+    section { padding-top: 65px; padding-bottom: 65px; }
+    h2 { font-size: clamp(2rem, 4vw, 3rem); margin: 12px 0; }
+    .muted { color: #637174; max-width: 700px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
+    .card {
+      padding: 23px;
+      background: white;
+      border: 1px solid #eee1d9;
+      border-radius: 18px;
+    }
+    .card h3 { margin-top: 8px; }
+    .card a { color: #c84f3a; font-weight: 700; }
+    .contact {
+      background: #fff0bd;
+      padding: 28px;
+      border-radius: 22px;
+    }
+    footer {
+      border-top: 1px solid #eadfd8;
+      color: #637174;
+      font-size: .9rem;
+    }
+    @media (max-width: 700px) {
+      .hero { flex-direction: column; align-items: flex-start; }
+      .shape { width: 160px; height: 160px; flex-basis: 160px; }
+      .grid { grid-template-columns: 1fr; }
+      nav { align-items: flex-start; flex-direction: column; }
+      .links { gap: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="brand" href="#home">cheryl<span>.</span>bensa</a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+      <a href="#work">Research</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="label">Lecturer · Researcher · Story enthusiast</div>
+        <h1>Hi, I'm<br><span>Cheryl Bensa.</span></h1>
+        <p class="lead">I explore how communication, media, and culture shape the ways we see the world — one story, screen, and conversation at a time.</p>
+        <a class="button" href="#about">Get to know me ↗</a>
+      </div>
+      <div class="shape" aria-hidden="true">✳</div>
+    </section>
+
+    <section class="soft" id="about">
+      <div class="label">A little about me</div>
+      <h2>Media, culture, and meaningful stories.</h2>
+      <p class="muted">I'm a lecturer in the Faculty of Digital Communication and Hotel & Tourism at BINUS University, Indonesia, and a PhD student in Media and Communication Studies at Universiti Malaya.</p>
+      <p class="muted">My work explores film and media studies, new media trends, popular culture, and environmental communication. I'm interested in how media represent identity, faith, gender, and everyday life.</p>
+    </section>
+
+    <section id="interests">
+      <div class="label">What I'm curious about</div>
+      <h2>Research interests</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>🎬 Film & media</h3>
+          <p class="muted">Film, representation, identity, religion, gender, and social values.</p>
+        </article>
+        <article class="card">
+          <h3>📱 New media</h3>
+          <p class="muted">Digital platforms, popular culture, and changing communication habits.</p>
+        </article>
+        <article class="card">
+          <h3>🌱 Environment</h3>
+          <p class="muted">Environmental communication, public understanding, and social marketing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="label">Selected work</div>
+      <h2>Research in conversation</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Catholic identity in Indonesian cinema</h3>
+          <p class="muted">Research on religious representation and Catholic identity in film.</p>
+          <a href="https://www.plarideljournal.org/wp-content/uploads/2025/03/PLARIDEL-2024-0007-Bensa-et-al-Early-View-2025.pdf" target="_blank" rel="noopener">Read article ↗</a>
+        </article>
+        <article class="card">
+          <h3>Plastic bag policy & social marketing</h3>
+          <p class="muted">Exploring public policy through an environmental communication perspective.</p>
+          <a href="https://ejournals.umn.ac.id/index.php/FIKOM/article/view/1257" target="_blank" rel="noopener">Read article ↗</a>
+        </article>
+        <article class="card">
+          <h3>More academic work</h3>
+          <p class="muted">Explore my research profile and publication record.</p>
+          <a href="https://sinta.kemdiktisaintek.go.id/authors/profile/6695621/?view=googlescholar" target="_blank" rel="noopener">View SINTA ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <div class="label">Say hello</div>
+        <h2>Let's talk about ideas.</h2>
+        <p>Interested in research, teaching, film, or media? Let's connect.</p>
+        <a class="button" href="https://communication.binus.ac.id/" target="_blank" rel="noopener">Find me at BINUS ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Cheryl Pricilla Bensa · Made with curiosity and a little color ✳</footer>
+</body>
+</html>
+
